@@ -79,55 +79,90 @@ class MessageWidget {
   }
 
   createWidgetContent() {
-    this.widgetContainer.innerHTML = `
-        <header class="widget__header">
-            <h3>Start a conversation</h3>
-            <p>We usually respond within a few hours</p>
-        </header>
+    // this.widgetContainer.innerHTML = `
+    //     <header class="widget__header">
+    //         <h3>Start a conversation</h3>
+    //         <p>We usually respond within a few hours</p>
+    //     </header>
 
-        <form>
-            <div class="form__field">
-                <label for="name">Name</label>
-                <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                />
-            </div>
+    //     <form>
+    //         <div class="form__field">
+    //             <label for="name">Name</label>
+    //             <input
+    //             type="text"
+    //             id="name"
+    //             name="name"
+    //             placeholder="Enter your name"
+    //             />
+    //         </div>
 
-            <div class="form__field">
-                <label for="email">Email</label>
-                <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                />
-            </div>
+    //         <div class="form__field">
+    //             <label for="email">Email</label>
+    //             <input
+    //             type="email"
+    //             id="email"
+    //             name="email"
+    //             placeholder="Enter your email"
+    //             />
+    //         </div>
 
-            <div class="form__field">
-                <label for="subject">Subject</label>
-                <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Enter Message Subject"
-                />
-            </div>
+    //         <div class="form__field">
+    //             <label for="subject">Subject</label>
+    //             <input
+    //             type="text"
+    //             id="subject"
+    //             name="subject"
+    //             placeholder="Enter Message Subject"
+    //             />
+    //         </div>
 
-            <div class="form__field">
-                <label for="message">Message</label>
-                <textarea
-                id="message"
-                name="message"
-                placeholder="Enter your message"
-                rows="6"
-                ></textarea>
-            </div>
+    //         <div class="form__field">
+    //             <label for="message">Message</label>
+    //             <textarea
+    //             id="message"
+    //             name="message"
+    //             placeholder="Enter your message"
+    //             rows="6"
+    //             ></textarea>
+    //         </div>
 
-            <button>Send Message</button>
-        </form>
+    //         <button>Send Message</button>
+    //     </form>
+    // `;
+        this.widgetContainer.innerHTML = `
+  <div>
+    
+    <h3 style="text-align:left; margin: 1em">Choose your impact</h3>
+    <div class="project" style="margin: 1em">
+    <button class="btn"><i class="fa fa-home"></i></button>
+    <button class="btn"><i class="fa-solid fa-hashtag"></i></button>
+     <button class="btn"><i class="fa-sharp fa-solid fa-share-nodes"></i></button>
+     <button class="btn"><i class="fa-solid fa-people-arrows"></i></button>
+      </div>
+    
+    <div class="card">
+    <div class="project">
+    <span style="color:#666666; font-size: 12px"> Black Equity </span>
+    <span style="color:#666666; font-size: 12px">Powered by Klean</span>
+    </div>
+    <p style="text-align: left; font-size: 16px">Fund 375 meals for dogs at a no-kill shelter in LA via Wags and Walks</p>
+  </div>
+  <div class="card">
+  <div class="project">
+  <span style="color:#666666; font-size: 12px"> Black Equity </span>
+  <span style="color:#666666; font-size: 12px">Powered by Klean</span>
+  </div>
+  <p style="text-align: left;">Fund 375 meals for dogs at a no-kill shelter in LA via Wags and Walks</p>
+</div>
+<div class="card">
+<div class="project">
+<span style="color:#666666; font-size: 12px"> Black Equity </span>
+<span style="color:#666666; font-size: 12px">Powered by Klean</span>
+</div>
+<p style="text-align: left;">Fund 375 meals for dogs at a no-kill shelter in LA via Wags and Walks</p>
+</div>
+   
+  </div>
     `;
   }
 
