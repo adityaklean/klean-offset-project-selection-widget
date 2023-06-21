@@ -54,7 +54,7 @@ class MessageWidget {
   }
 
   injectStyles() {
-    const styleTag = document.createElement("style");
+    const styleTag = document.createElement("style scoped");
     styleTag.innerHTML = styles.replace(/^\s+|\n/gm, "");
 
     document.head.appendChild(styleTag);
